@@ -1,3 +1,4 @@
-From openjdk:8
-copy ./target/ams_rest_mars_2022-0.0.1-SNAPSHOT.jar ams_rest_mars_2022-0.0.1-SNAPSHOT.jar
-CMD ["java","-jar","ams_rest_mars_2022-0.0.1-SNAPSHOT.jar"]
+From openjdk:8-alpine
+copy ./target/amsrest.jar amsrest.jar
+CMD ["java","-jar","amsrest.jar"]
+
